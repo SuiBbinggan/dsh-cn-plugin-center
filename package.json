@@ -2,6 +2,14 @@
   "name": "dsh-cn-plugin-center",
   "version": "0.2.0",
   "description": "A China-friendly, curated plugin center for DeepSeek Harness Web.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin-center",
+    "npm-mirror",
+    "china"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",

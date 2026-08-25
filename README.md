@@ -2,6 +2,22 @@
 
 这个本地插件把精选与社区插件目录、安装状态和镜像设置放进 DeepSeek Harness 的“设置 -> 插件”。
 
+## 安装
+
+从 GitHub 直接安装到 `web` profile：
+
+```bash
+dsh plugin --profile web add github:SuiBbinggan/dsh-cn-plugin-center
+```
+
+安装后重启 `dsh web`，再进入“设置 -> 插件 -> 插件中心”。也可以在 GitHub 的 [Releases](https://github.com/SuiBbinggan/dsh-cn-plugin-center/releases) 页面下载发布版本。
+
+卸载：
+
+```bash
+dsh plugin --profile web remove dsh-cn-plugin-center
+```
+
 ## 插件目录
 
 - 默认先展示 10 个精选插件。
