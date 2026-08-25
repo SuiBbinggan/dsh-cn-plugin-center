@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-25",
+  "plugins": [
+    {
+      "id": "dsh-better-sidebar",
+      "name": "Better Sidebar",
+      "version": "0.16.1",
+      "category": "界面",
+      "categoryEn": "Interface",
+      "description": "更接近 VS Code 的侧边栏，改善工作区、会话和常用入口的浏览体验。",
+      "descriptionEn": "A VS Code-like sidebar for faster workspace and session navigation.",
+      "repository": "https://github.com/omdsh-dev/DSH-better-sidebar",
+      "compatibility": {
+        "level": "declared",
+        "label": "声明兼容",
+        "labelEn": "Declared compatible",
+        "note": "包作者声明支持当前 Harness 版本范围。",
+        "noteEn": "The package declares a peer range that includes this Harness version."
+      },
+      "featured": true
+    },
+    {
+      "id": "dsh-mnemon",
+      "name": "Mnemon",
+      "version": "0.3.0",
+      "category": "记忆",
+      "categoryEn": "Memory",
+      "description": "为 Harness 增加可持久化记忆，让跨会话信息更容易延续。",
+      "descriptionEn": "Adds persistent memory so useful context can carry across sessions.",
+      "repository": "https://github.com/omdsh-dev/dsh-mnemon",
+      "compatibility": {
+        "level": "declared",
+        "label": "声明兼容",
+        "labelEn": "Declared compatible",
+        "note": "包作者声明支持当前 Harness 版本范围。",
+        "noteEn": "The package declares a peer range that includes this Harness version."
+      },
+      "featured": true
+    },
+    {
+      "id": "dsh-automation",
+      "name": "Automation",
+      "version": "0.1.4",
+      "category": "自动化",
+      "categoryEn": "Automation",
+      "description": "保存并运行提示词自动化流程，适合重复执行的日常任务。",
+      "descriptionEn": "Save and run prompt automations for recurring work.",
+      "repository": "https://github.com/Ephemeral-AI-Lab/dsh-plugins",
+      "compatibility": {
+        "level": "declared",
+        "label": "声明兼容",
+        "labelEn": "Declared compatible",
+        "note": "包作者声明支持当前 Harness 版本范围。",
+        "noteEn": "The package declares a peer range that includes this Harness version."
+      },
+      "featured": true
+    },
+    {
+      "id": "dsh-usage-plugin",
+      "name": "Usage Plugin",
+      "version": "0.1.0",
+      "category": "用量",
+      "categoryEn": "Usage",
+      "description": "在界面中查看模型用量和余额信息。",
+      "descriptionEn": "Shows model usage and balance information in the UI.",
+      "repository": "https://github.com/lurejewel/dsh-usage-plugin",
+      "compatibility": {
+        "level": "declared",
+        "label": "声明兼容",
+        "labelEn": "Declared compatible",
+        "note": "包作者声明支持当前 Harness 版本范围。",
+        "noteEn": "The package declares a peer range that includes this Harness version."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-cost-meter",
+      "name": "Cost Meter",
+      "version": "1.5.42",
+      "category": "用量",
+      "categoryEn": "Usage",
+      "description": "提供更细的 token 与费用统计，便于控制模型调用成本。",
+      "descriptionEn": "Detailed token and cost tracking for model requests.",
+      "repository": "https://github.com/Han-1413141/dsh-cost-meter",
+      "compatibility": {
+        "level": "review",
+        "label": "建议核对",
+        "labelEn": "Review advised",
+        "note": "包未声明明确的 Harness 对等版本，安装前建议查看源码和说明。",
+        "noteEn": "No explicit Harness peer range is declared; review the source and docs first."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-side-chat",
+      "name": "Side Chat",
+      "version": "0.1.2",
+      "category": "会话",
+      "categoryEn": "Chat",
+      "description": "开启独立的并行侧边对话，并把摘要带回主会话。",
+      "descriptionEn": "Runs parallel side conversations and brings summaries back to the main chat.",
+      "repository": "https://www.npmjs.com/package/dsh-side-chat",
+      "compatibility": {
+        "level": "review",
+        "label": "建议核对",
+        "labelEn": "Review advised",
+        "note": "npm 元数据没有源码仓库链接，安装前建议先核对包内容。",
+        "noteEn": "The npm metadata has no source repository link; inspect the package first."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-notifier",
+      "name": "Notifier",
+      "version": "0.8.6",
+      "category": "通知",
+      "categoryEn": "Notifications",
+      "description": "任务完成时发送桌面或消息通知，适合运行较久的工作。",
+      "descriptionEn": "Sends completion notifications for longer-running work.",
+      "repository": "https://github.com/THEWOLFWALKER/dsh-notifier",
+      "compatibility": {
+        "level": "review",
+        "label": "建议核对",
+        "labelEn": "Review advised",
+        "note": "Node 版本符合要求，但包未声明明确的 Harness 对等版本。",
+        "noteEn": "The Node requirement is met, but no explicit Harness peer range is declared."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-chat-import",
+      "name": "Chat Import",
+      "version": "0.7.0",
+      "category": "数据",
+      "categoryEn": "Data",
+      "description": "把其他聊天记录导入 Harness，便于迁移已有上下文。",
+      "descriptionEn": "Imports existing chat histories into Harness.",
+      "repository": "https://github.com/Nwflower/dsh-chat-import",
+      "compatibility": {
+        "level": "declared",
+        "label": "声明兼容",
+        "labelEn": "Declared compatible",
+        "note": "包作者声明支持当前 Harness 版本范围。",
+        "noteEn": "The package declares a peer range that includes this Harness version."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-bottom-info-bar",
+      "name": "Bottom Info Bar",
+      "version": "1.5.1",
+      "category": "界面",
+      "categoryEn": "Interface",
+      "description": "在底部状态栏集中显示费用、余额和会话信息。",
+      "descriptionEn": "Adds a bottom status bar for cost, balance, and session details.",
+      "repository": "https://github.com/songoao25/dsh-bottom-info-bar",
+      "compatibility": {
+        "level": "review",
+        "label": "建议核对",
+        "labelEn": "Review advised",
+        "note": "包未声明明确的 Harness 对等版本，安装前建议查看源码和说明。",
+        "noteEn": "No explicit Harness peer range is declared; review the source and docs first."
+      },
+      "featured": false
+    },
+    {
+      "id": "dsh-undo-plugin",
+      "name": "Undo",
+      "version": "0.1.0-rc.8",
+      "category": "工作流",
+      "categoryEn": "Workflow",
+      "description": "为会话和改动提供回退、归档等辅助操作。",
+      "descriptionEn": "Adds rollback and archive helpers for sessions and changes.",
+      "repository": "https://github.com/23swccp/dsh-undo",
+      "compatibility": {
+        "level": "review",
+        "label": "建议核对",
+        "labelEn": "Review advised",
+        "note": "插件仍处于候选版本，安装前建议查看源码和说明。",
+        "noteEn": "This plugin is still a release candidate; review the source and docs first."
+      },
+      "featured": false
+    }
+  ]
+}

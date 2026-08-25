@@ -1,0 +1,53 @@
+{
+  "name": "dsh-cn-plugin-center",
+  "version": "0.2.0",
+  "description": "A China-friendly, curated plugin center for DeepSeek Harness Web.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuiBbinggan/dsh-cn-plugin-center.git"
+  },
+  "homepage": "https://github.com/SuiBbinggan/dsh-cn-plugin-center#readme",
+  "bugs": {
+    "url": "https://github.com/SuiBbinggan/dsh-cn-plugin-center/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "catalog.json",
+    "cordis.patch.yml",
+    "README.md",
+    "test.mjs"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-client-locale": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-settings": "^0.1.1-rc.2"
+  }
+}
