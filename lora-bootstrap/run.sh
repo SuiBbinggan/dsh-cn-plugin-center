@@ -2,6 +2,16 @@
 # 《九域旅人》画风 LoRA 训练启动脚本（SDXL / Animagine XL 系底模）
 # 数据集: VPS 主用, Google Drive 备用 | 底模: hf-mirror
 set -e
+# 把全部输出同时记到 /data/run.log(平台云盘, 任务结束后仍可查看), 定位黑盒失败
+mkdir -p /data 2>/dev/null && touch /data/run.log 2>/dev/null && exec >>/data/run.log 2>&1 || echo "WARN: cannot write /data/run.log"
+echo "run.sh started at $(date)"
+
+echo "--- connectivity self-test ---"
+for target in "141.11.50.249 8901" "hf-mirror.com 443" "github.com 443" "drive.google.com 443" "pypi.org 443"; do
+  set -- $target
+  if timeout 8 bash -c "echo > /dev/tcp/$1/$2" 2>/dev/null; then echo "$1:$2 OK"; else echo "$1:$2 FAIL"; fi
+done
+
 VPS="http://141.11.50.249:8901"
 # 轻量遥测: 让容器向 VPS 报进度(平台不保留日志时也能定位卡在哪一步), 失败不影响主流程
 ping() { curl -s --max-time 10 "$VPS/ping?stage=$1" -o /dev/null || true; }
